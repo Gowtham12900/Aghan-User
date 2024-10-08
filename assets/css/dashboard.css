@@ -1,0 +1,192 @@
+             
+    body{
+        margin-top:0px;
+        color: #1a202c;
+        text-align: left;
+        background-color: #e2e8f0;    
+        }
+        .main-body {
+        padding: 15px;
+        }
+        
+        .card-profile {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .wallet-card-detail {
+            height: auto;
+        }
+    
+        .card-body {
+        flex: 1 1 auto;
+        min-height: 1px;
+        padding: 1rem;
+        }
+        .gutters-sm {
+        margin-right: -8px;
+        margin-left: -8px;
+        }
+        .gutters-sm>.col, .gutters-sm>[class*=col-] {
+        padding-right: 8px;
+        padding-left: 8px;
+        }
+        .mb-3, .my-3 {
+        margin-bottom: 1rem!important;
+        }
+        .bg-gray-300 {
+        background-color: #e2e8f0;
+        }
+        .h-100 {
+        height: 100%!important;
+        }
+        .shadow-none {
+        box-shadow: none!important;
+        }
+
+
+
+@media (max-width: 576px) {
+                            
+    .new-member {
+        font-size: 0.8em; /* Adjust font size for mobile */
+        padding: 4px; 
+    }
+
+    .new-member img {
+        width: 35px; /* Smaller image size for mobile */
+    }
+}
+.income-card{
+    transition: transform 0.3s ease-in-out;
+}
+.income-card:hover{
+    transform: translateY(-5px); 
+}
+@media (max-width: 768px) {
+    .col-6.col-md-4.col-lg-2 {
+        max-width: 48%; /* Adjust to 2 cards per row */
+        flex: 0 0 48%;  /* Ensure the card takes up 48% width */
+        margin-bottom: 10px; /* Spacing between cards */
+    }
+
+    .wallet-card {
+        height: 80px; /* Decrease card height */
+        padding: 5px; /* Reduce padding */
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Arrange children in a column */
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #f8f4f4;
+        background-clip: border-box;
+        border: 0 solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    .wallet-card:hover {
+        transform: translateY(-5px); /* Slight hover effect */
+    }
+
+
+    h6 {
+        font-size: 10px; /* Further decrease heading font size */
+        margin-bottom: 2px; /* Adjust margin for better spacing */
+        text-align: center; /* Center the heading */
+    }
+
+    p {
+        font-size: 10px; /* Decrease paragraph font size */
+        margin: 0; /* Remove default margin */
+    }
+
+    .wallet-card img {
+        width: 30px; /* Decrease image size */
+        height: 30px; /* Maintain aspect ratio */
+        margin-bottom: 2px; /* Space below image */
+    }
+
+    .text-success {
+        font-size: 10px; /* Reduce currency text size */
+    }
+}
+               /* Desktop view for wallet cards */
+               @media (min-width: 769px) {
+                .col-6.col-md-4.col-lg-2 {
+                    max-width: 50%; /* Adjust to fit more cards per row (5 cards) */
+                    flex: 0 0 30%;  /* Ensure the card takes up 18% width */
+                    margin-bottom: 20px; /* Increase space between cards */
+                }
+
+                .wallet-card {
+                    height: 120px; /* Increase the card height */
+                    padding: 10px; /* Adjust padding for larger screens */
+                    display: flex; /* Use flexbox for alignment */
+                    flex-direction: column; /* Keep items arranged in a column */
+                    justify-content: center; /* Vertically center the content */
+                    align-items: center; /* Horizontally center the content */
+                    position: relative;
+                    background-color: #f8f4f4; /* Keep background color */
+                    /* Optional border */
+                    border-radius: .25rem; /* Keep border radius for card */
+                    /* Keep shadow effect */
+                    transition: transform 0.3s ease-in-out; /* Add hover effect for desktop */
+                }
+
+                .wallet-card:hover {
+                    transform: translateY(-5px); /* Slight hover effect */
+                }
+
+                /* Styling for the text inside the wallet card */
+                .wallet-card h6 {
+                    font-size: 14px; /* Adjust heading size */
+                    margin-bottom: 5px; /* Adjust margin */
+                    overflow: hidden; 
+                    width: 100%;
+                    text-align: center;
+                    line-height: 1.2;
+                }
+
+                .wallet-card p {
+                    font-size: 12px; /* Adjust paragraph size */
+                    text-align: center;
+                    margin: 0;
+                }
+
+                .wallet-card img {
+                    width: 40px; /* Increase icon size */
+                    height: 40px; /* Adjust icon height */
+                    margin-bottom: 5px; /* Space between image and text */
+                }
+            }
+              /* Reducing height and width of the table */
+              .custom-table {
+                width: 100%; /* Make table responsive */
+                max-width: 500px; /* Restrict table width */
+                margin: 0 auto; /* Center the table horizontally */
+            }
+        
+            .custom-table th, .custom-table td {
+                padding: 3px 8px; /* Further reduce padding */
+                vertical-align: middle; /* Align text vertically in the middle */
+                font-size: 0.875rem; /* Slightly reduce font size */
+            }
+        
+            .custom-table th {
+                width: 150px; /* Reduce width of the first column */
+            }
+        
+            /* Additional styling for responsiveness */
+            @media (max-width: 768px) {
+                .custom-table {
+                    max-width: 100%; /* Allow full width on smaller screens */
+                }
+            }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <meta name="author" content="WRAPCODERS">
+    <title>Login - Aghan Promoters</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/Dashboard/logo.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.min.css">
+        <style>
+            body {
+    background-image: url('./assets/images/Login/e bike.gif'), url('./assets/images/Login/bike.gif'), url('./assets/images/Login/login-bg.png'); /* Add third image */
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom right, top left, center;
+    background-size: auto, auto, cover;
+    height: 100vh; 
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    body {
+        background-image: none, url('./assets/images/Login/bike.gif'), url('./assets/images/Login/login-bg.png');
+        background-size: 250px, 250px, cover;
+        background-position: bottom, top, center;
+        overflow: hidden;
+    }
+}
+
+        </style>
+        
+</head>
+
+<body>
+    <main class="auth-minimal-wrapper">
+        <div class="auth-minimal-inner">
+            <div class="minimal-card-wrapper">
+                <div class="card mb-4 mt-5 mx-4 mx-sm-0 position-relative" style="background-color: rgba(255, 255, 255, 0.5);">
+                    <div class="wd-50 bg-white p-2 rounded-circle shadow-lg position-absolute translate-middle top-0 start-50">
+                        <img src="assets/images/Dashboard/logo.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-body p-sm-5 text-center">
+                        <h2 class="fs-20 fw-bolder mb-4">Login</h2>
+                        
+                        <form action="user.html" class="w-100 mt-4 pt-2">
+                            <div class="mb-4">
+                                <input style="background-color: rgba(255, 255, 255, 0.5);" type="text" class="form-control" placeholder="Enter Your User ID" required>
+                            </div>
+                            <div class="mb-4 generate-pass">
+                                <div class="input-group field">
+                                    <input style="background-color: rgba(255, 255, 255, 0.5);" type="password" class="form-control password" name="Password" id="password" placeholder="Enter Your Password">
+                                    <span class="input-group-text">
+                                        <i class="far fa-eye" id="togglePassword" style="cursor: pointer;"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-5">
+                                <button type="submit" style="background-color: #24927c; color: #fff;" class="btn btn-lg w-100">Sign In</button>
+                            </div>
+                            
+                        </form>
+                        <br>
+                        <div>
+                            <h3><a href="frgt_pwd.html" style="color: #000;" class="mt-5">Forget password?</a></h3>
+                        </div>
+                        <div  class="mt-5  text-muted">
+                            <span style="color: #000;"> Are you a new customer?</span>
+                            <h5><a href="Register.html" style="color: #000;" class="fw-bold">Please Create an account</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            const passwordField = document.getElementById('password');
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
+    <script src="assets/vendors/js/vendors.min.js"></script>
+    <script src="assets/js/common-init.min.js"></script>
+    <script src="assets/js/theme-customizer-init.min.js"></script>
+</body>
+
+</html>
